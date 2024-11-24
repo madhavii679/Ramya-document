@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-frame Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .frame-container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        iframe {
+            flex: 1;
+            width: 100%;
+            border: none;
+        }
+
+        .frame-container iframe:nth-child(1) {
+            height: 15%;
+        }
+
+        .frame-container iframe:nth-child(2) {
+            height: 15%;
+        }
+
+        .frame-container iframe:nth-child(3) {
+            height: 15%;
+        }
+
+        .frame-container iframe:nth-child(4) {
+            height: 15%;
+        }
+
+        .frame-container iframe:nth-child(5) {
+            height: 15%;
+        }
+
+        .frame-container iframe:nth-child(6) {
+            height: 25%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="frame-container">
+        <!-- First Frame: Display name and address -->
+        <iframe src="frame1.html" name="frame1"></iframe>
+
+        <!-- Second Frame: Display qualifications list -->
+        <iframe src="frame2.html" name="frame2"></iframe>
+
+        <!-- Third Frame: Display scrolling message -->
+        <iframe src="frame3.html" name="frame3"></iframe>
+    </div>
+
+</body>
+</html>
